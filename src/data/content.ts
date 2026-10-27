@@ -725,9 +725,8 @@ export const events = {
       month: "May",
       title: "Sınırsız Sesler",
       venue: "Kot 1 Kolektif",
-      role: "Soundpainting atölyesi · Nida Aras ile",
+      role: "Soundpainting atölyesi · Nidal Aras ile",
       category: "atolye" as const,
-      image: "/images/soundpainting-cakstudyo.jpg",
       description:
         "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
     },
@@ -761,15 +760,6 @@ export const events = {
       image: "/images/this-fire.jpg",
       description:
         "Nihal ile kaydedilen canlı performans; havada ilerleyen klarnet melodileri.",
-    },
-    {
-      date: "2023",
-      month: "Nis",
-      title: "Atölye Kekik",
-      venue: "Termal",
-      role: "Klarinet performansı",
-      category: "konser" as const,
-      image: "/images/atolye-kekik.jpg",
     },
     {
       date: "2019",

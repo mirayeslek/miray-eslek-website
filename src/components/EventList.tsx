@@ -93,7 +93,9 @@ export function EventList({ items }: { items: EventItem[] }) {
                 className="object-cover object-[center_20%]"
                 sizes="(max-width: 640px) 64px, 80px"
               />
-            ) : null}
+            ) : (
+              <div className="absolute inset-0 noise opacity-60" />
+            )}
           </div>
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
