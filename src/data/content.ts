@@ -627,6 +627,17 @@ export const events = {
   current: [camurEvent],
   past: [
     {
+      date: "2026",
+      month: "Mar",
+      title: "Soundpainting ve İhtimaller",
+      venue: "Kocaeli Üniversitesi GSF Müzik Bölümü",
+      role: "Atölye yürütücüsü",
+      category: "atolye" as const,
+      image: "/images/soundpainting-kou.jpg",
+      description:
+        "Öğrencilerle kolektif doğaçlama, dinleme ve senkronize melodi geliştirme üzerine buluşma.",
+    },
+    {
       date: "2025",
       title: "Çerkes Rıdvan'ın Dolabı",
       venue: "İstanbul Tiyatro Festivali · Dolkun Production · Bahçe Galata",
@@ -729,17 +740,6 @@ export const events = {
       category: "atolye" as const,
       description:
         "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
-    },
-    {
-      date: "2024",
-      month: "Mar",
-      title: "Soundpainting ve İhtimaller",
-      venue: "Kocaeli Üniversitesi GSF Müzik Bölümü",
-      role: "Atölye yürütücüsü",
-      category: "atolye" as const,
-      image: "/images/soundpainting-kou.jpg",
-      description:
-        "Öğrencilerle kolektif doğaçlama, dinleme ve senkronize melodi geliştirme üzerine buluşma.",
     },
     {
       date: "2023",
