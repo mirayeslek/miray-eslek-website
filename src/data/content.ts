@@ -628,6 +628,16 @@ export const events = {
   past: [
     {
       date: "2026",
+      month: "May",
+      title: "Sınırsız Sesler",
+      venue: "Kot 1 Kolektif",
+      role: "Soundpainting atölyesi · Nidal Aras ile",
+      category: "atolye" as const,
+      description:
+        "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
+    },
+    {
+      date: "2026",
       month: "Mar",
       title: "Soundpainting ve İhtimaller",
       venue: "Kocaeli Üniversitesi GSF Müzik Bölümü",
@@ -730,16 +740,6 @@ export const events = {
       image: "/images/soundpainting-atolyetez.jpg",
       description:
         "12 haftalık seri: müzik, hareket ve hikâyelerin buluştuğu doğaçlama odaklı atölye programı.",
-    },
-    {
-      date: "2024",
-      month: "May",
-      title: "Sınırsız Sesler",
-      venue: "Kot 1 Kolektif",
-      role: "Soundpainting atölyesi · Nidal Aras ile",
-      category: "atolye" as const,
-      description:
-        "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
     },
     {
       date: "2023",
