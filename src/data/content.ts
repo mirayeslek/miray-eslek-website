@@ -640,7 +640,7 @@ export type EventItem = {
   title: string;
   venue: string;
   role: string;
-  category: "konser" | "atolye" | "tiyatro" | "panel" | "proje" | "sarki";
+  category: "konser" | "atolye" | "tiyatro" | "panel" | "proje" | "sarki" | "album";
   image?: string;
   description?: string;
   external?: string;
@@ -660,7 +660,20 @@ const camurEvent = {
 };
 
 export const events = {
-  upcoming: [] satisfies EventItem[],
+  upcoming: [
+    {
+      date: "2026",
+      month: "20 Kasım",
+      title: "Noctanima Duo Clarinet Projesi",
+      venue: "Pb Müzik",
+      role: "Miray Eslek & İrem Ece Gülensoy",
+      category: "album" as const,
+      image: "/images/noctanima-kapak.jpg",
+      description:
+        "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
+      external: "https://www.instagram.com/noctanimaofficial/",
+    },
+  ] satisfies EventItem[],
   current: [
     {
       date: "2026",

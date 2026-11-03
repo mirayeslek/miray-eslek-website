@@ -9,6 +9,7 @@ const categoryLabels: Record<EventItem["category"], string> = {
   panel: "Panel",
   proje: "Proje",
   sarki: "Şarkı",
+  album: "Albüm",
 };
 
 const categoryGradients: Record<EventItem["category"], string> = {
@@ -18,6 +19,7 @@ const categoryGradients: Record<EventItem["category"], string> = {
   panel: "from-indigo-700/50 via-accent/20 to-violet-800/40",
   proje: "from-violet-800/50 via-accent/20 to-indigo-900/40",
   sarki: "from-fuchsia-800/45 via-accent/25 to-violet-900/45",
+  album: "from-purple-800/50 via-accent/25 to-fuchsia-900/40",
 };
 
 export function EventCards({ items }: { items: EventItem[] }) {
