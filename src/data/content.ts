@@ -617,7 +617,7 @@ export type EventItem = {
   title: string;
   venue: string;
   role: string;
-  category: "konser" | "atolye" | "tiyatro" | "panel";
+  category: "konser" | "atolye" | "tiyatro" | "panel" | "proje";
   image?: string;
   description?: string;
   external?: string;
@@ -768,11 +768,11 @@ export const events = {
         "12 haftalık seri: müzik, hareket ve hikâyelerin buluştuğu, doğaçlamaya odaklanan bir atölye programı.",
     },
     {
-      date: "2023",
+      date: "2023–2024",
       title: "Her Güne Bir Melodi",
       venue: "İTÜ MİAM",
       role: "100 günlük klarinet serisi",
-      category: "konser" as const,
+      category: "proje" as const,
       image: "/images/portre-klarnet.jpg",
       description:
         "Hakan Kurşun'un önerisiyle başlayan, her gün bir melodi üreten 100 günlük kişisel proje.",
