@@ -617,7 +617,7 @@ export type EventItem = {
   title: string;
   venue: string;
   role: string;
-  category: "konser" | "atolye" | "tiyatro" | "panel" | "proje";
+  category: "konser" | "atolye" | "tiyatro" | "panel" | "proje" | "sarki";
   image?: string;
   description?: string;
   external?: string;
@@ -781,11 +781,10 @@ export const events = {
       date: "2023",
       title: "This Fire",
       venue: "İTÜ MİAM Stüdyoları",
-      role: "Klarinet · Nihal ile canlı kayıt",
-      category: "konser" as const,
+      role: "Klarinet",
+      category: "sarki" as const,
       image: "/images/this-fire.jpg",
-      description:
-        "Nihal ile kaydedilen canlı performans; havada ilerleyen klarnet melodileri.",
+      description: "Nihal ile kaydedilen canlı performans.",
     },
     {
       date: "2019",
