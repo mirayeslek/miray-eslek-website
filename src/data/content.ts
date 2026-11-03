@@ -792,7 +792,7 @@ export const events = {
     },
     {
       date: "2024",
-      month: "Ekim",
+      month: "Ekim–Aralık",
       title: "Soundpainting Buluşmaları",
       venue: "Atölye Tez · Üsküdar",
       role: "Atölye Yürütücüsü",
