@@ -665,7 +665,7 @@ export const events = {
     },
     {
       date: "2026",
-      month: "Mar",
+      month: "Mart",
       title: "Soundpainting ve İhtimaller",
       venue: "Kocaeli Üniversitesi GSF Müzik Bölümü",
       role: "Atölye yürütücüsü",
