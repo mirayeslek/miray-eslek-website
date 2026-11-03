@@ -683,6 +683,7 @@ export const events = {
       venue: "Ormanya · Kocaeli",
       role: "Atölye Yürütücüsü",
       category: "atolye" as const,
+      image: "/images/ormanya-etkinlik-kapak.jpg",
       description:
         "TÜBİTAK 4004 programında çocuklarla Soundpainting ve Sesin Dili çalışması.",
     },
