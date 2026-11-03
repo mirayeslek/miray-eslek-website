@@ -697,7 +697,7 @@ export const events = {
     },
     {
       date: "2025",
-      month: "Ağustos",
+      month: "Eylül",
       title: "Tico Band",
       venue: "Minoa Pera",
       role: "Klarinet · Loop Station",
