@@ -107,7 +107,7 @@ export const gundemItems: GundemItem[] = [
     label: "Yaklaşan performans",
     title: "Silahşör Kızı Rabia Hanım",
     detail: "24–25 Ekim · Phebus Müzayede Evi",
-    href: "/etkinlikler?tab=upcoming",
+    href: "/etkinlikler?tab=past",
   },
   {
     label: "Yeni proje",
@@ -660,23 +660,22 @@ const camurEvent = {
 };
 
 export const events = {
-  upcoming: [
+  upcoming: [] satisfies EventItem[],
+  current: [] satisfies EventItem[],
+  past: [
+    camurEvent,
     {
       date: "2026",
-      month: "Eki",
+      month: "Ekim",
       title: "Silahşör Kızı Rabia Hanım",
       venue: "Phebus Müzayede Evi · Asmalımescit",
-      role: "Müzisyen · klarinet",
+      role: "Müzisyen · Klarinet",
       category: "tiyatro" as const,
       image: "/images/poster-rabia-hanim.jpg",
       description:
         "Kafes Arkası Günahkarları serisi · Reşad Ekrem Koçu'dan uyarlama; geçen yıl Çerkes Rıdvan'ın Dolabı ile başlayan serinin devamı. Phebus Müzayede Evi'nde prömiyer 24–25 Ekim. Müzik ekibinde Miray Eslek.",
       external: "https://www.instagram.com/p/DeSRRw-Rt6m/",
     },
-  ] satisfies EventItem[],
-  current: [] satisfies EventItem[],
-  past: [
-    camurEvent,
     {
       date: "2026",
       month: "Eylül",
