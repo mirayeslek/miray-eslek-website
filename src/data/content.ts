@@ -533,7 +533,7 @@ export const cerkesRidvanProject = {
   basedOn: "Reşad Ekrem Koçu'dan",
   festival: "İstanbul Tiyatro Festivali · Dolkun Production · Bahçe Galata",
   year: "2025–2026",
-  role: "Müzisyen · klarinet ve vokal",
+  role: "Müzisyen · klarinet · vokal",
   musicDirector: "Gökçe \"CheChe\" Gürçay",
   musicians: ["Volkan İncüvez", "Miray Eslek", "Özlem Kaya", "Gökçe \"CheChe\" Gürçay"],
   award: {
