@@ -685,11 +685,11 @@ export const events = {
         "Gökçe Gürçay müzik direktörlüğündeki ekip, 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü kazandı.",
     },
     {
-      date: "2025",
-      month: "Ağu",
+      date: "2026",
+      month: "Ağustos",
       title: "Ayaküstü Konser",
       venue: "Müze Gazhane · İklim Müzesi önü",
-      role: "Klarinet · Cem Mazlum ile duo",
+      role: "Klarinet · Perküsyon",
       category: "konser" as const,
       image: "/images/ayakustu-konser.jpg",
       description:
