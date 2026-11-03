@@ -694,6 +694,7 @@ export const events = {
       venue: "Kot 1 Kolektif",
       role: "Soundpainting Atölyesi · Nidal Aras ile",
       category: "atolye" as const,
+      image: "/images/sinirsiz-sesler.jpg",
       description:
         "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
     },
