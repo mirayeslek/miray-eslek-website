@@ -678,6 +678,16 @@ export const events = {
   past: [
     {
       date: "2026",
+      month: "Eylül",
+      title: "Sesin Çok Boyutlu Dünyasında Keşif Yolculuğu",
+      venue: "Ormanya · Kocaeli",
+      role: "Atölye Yürütücüsü",
+      category: "atolye" as const,
+      description:
+        "TÜBİTAK 4004 programında çocuklarla Soundpainting ve Sesin Dili çalışması.",
+    },
+    {
+      date: "2026",
       month: "Mayıs",
       title: "Sınırsız Sesler",
       venue: "Kot 1 Kolektif",
