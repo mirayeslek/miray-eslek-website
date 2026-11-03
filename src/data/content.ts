@@ -106,8 +106,8 @@ export const gundemItems: GundemItem[] = [
   {
     label: "Yaklaşan performans",
     title: "Silahşör Kızı Rabia Hanım",
-    detail: "24–25 Ekim · Phebus Müzayede Evi",
-    href: "/etkinlikler?tab=past",
+    detail: "14–15 Kasım · 19:00 · Phebus Müzayede Evi",
+    href: "/etkinlikler?tab=current",
   },
   {
     label: "Yeni proje",
@@ -661,7 +661,21 @@ const camurEvent = {
 
 export const events = {
   upcoming: [] satisfies EventItem[],
-  current: [] satisfies EventItem[],
+  current: [
+    {
+      date: "2026",
+      month: "Kasım",
+      title: "Silahşör Kızı Rabia Hanım",
+      venue: "Phebus Müzayede Evi · Asmalımescit",
+      role: "Müzisyen · Klarinet",
+      category: "tiyatro" as const,
+      image: "/images/poster-rabia-hanim.jpg",
+      description:
+        "Seans: 14–15 Kasım 2026, saat 19:00. Kafes Arkası Günahkarları serisi · Reşad Ekrem Koçu'dan uyarlama; geçen yıl Çerkes Rıdvan'ın Dolabı ile başlayan serinin devamı. Müzik ekibinde Miray Eslek.",
+      external:
+        "https://tiyatrolar.com.tr/tiyatro/kafes-arkasi-gunahkarlari-silahsor-kizi-rabia-hanim",
+    },
+  ] satisfies EventItem[],
   past: [
     camurEvent,
     {
