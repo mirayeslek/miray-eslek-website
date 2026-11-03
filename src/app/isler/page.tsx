@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { PageShell } from "@/components/PageShell";
 import { NoctanimaNews } from "@/components/NoctanimaNews";
+import { SoundpaintingNews } from "@/components/SoundpaintingNews";
 import { worksSections } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -69,6 +70,9 @@ export default function WorksPage() {
               )}
               {section.id === "performans" ? (
                 <NoctanimaNews className="mt-8" compact />
+              ) : null}
+              {section.id === "soundpainting" ? (
+                <SoundpaintingNews className="mt-8" heading="h3" />
               ) : null}
             </section>
           );
