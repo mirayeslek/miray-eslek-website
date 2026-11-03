@@ -754,7 +754,7 @@ export const events = {
       date: "2025",
       title: "MANG JAM",
       venue: "Mang School · Komünite Social",
-      role: "Sahne performansı",
+      role: "Sahne Performansı",
       category: "konser" as const,
       image: "/images/mang-jam.jpg",
       description:
