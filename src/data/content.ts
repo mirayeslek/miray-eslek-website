@@ -113,7 +113,7 @@ export const gundemItems: GundemItem[] = [
     label: "Yeni proje",
     title: "ÇAMUR",
     detail: "24 Ekim 2026 · 11:00 · Büyükyalı",
-    href: "/etkinlikler?tab=current",
+    href: "/etkinlikler?tab=past",
   },
   {
     label: "Son yayın",
@@ -648,10 +648,10 @@ export type EventItem = {
 
 const camurEvent = {
   date: "2026",
-  month: "Eki",
+  month: "Ekim",
   title: "ÇAMUR",
   venue: "Büyükyalı · Raife Cebeci Anaokulu",
-  role: "Performans · müzik",
+  role: "Performans · Müzik",
   category: "tiyatro" as const,
   image: "/images/camur-afis.jpg",
   description:
@@ -674,8 +674,9 @@ export const events = {
       external: "https://www.instagram.com/p/DeSRRw-Rt6m/",
     },
   ] satisfies EventItem[],
-  current: [camurEvent],
+  current: [] satisfies EventItem[],
   past: [
+    camurEvent,
     {
       date: "2026",
       month: "Eylül",
