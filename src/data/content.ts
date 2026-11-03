@@ -824,7 +824,7 @@ export const events = {
       date: "2019",
       title: "GitarLive",
       venue: "İstanbul",
-      role: "Klarinet & vokal",
+      role: "Klarinet & Vokal",
       category: "konser" as const,
       image: "/images/gitarlive-tres.jpg",
     },
@@ -840,7 +840,7 @@ export const events = {
       date: "2016",
       title: "İSPO Konseri",
       venue: "60m² Taksim",
-      role: "Klarinet & vokal",
+      role: "Klarinet & Vokal",
       category: "konser" as const,
     },
     {
