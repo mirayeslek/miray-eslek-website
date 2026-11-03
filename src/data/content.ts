@@ -773,7 +773,7 @@ export const events = {
     },
     {
       date: "2024",
-      month: "Kas",
+      month: "Kasım",
       title: "Beyoğlu'nda Ses ve Gürültüleri \"Şimdide Düşlemek\"",
       venue: "Tokatlıyan İş Hanı · Buluştur Beyoğlu",
       role: "Konuşmacı",
