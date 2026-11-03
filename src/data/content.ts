@@ -75,6 +75,33 @@ export type GundemItem = {
   href?: string;
 };
 
+export type GundemCredit = {
+  label?: string;
+  value: string;
+  href?: string;
+};
+
+export const gundemFeature = {
+  label: "Yeni albüm",
+  title: "Noctanima Duo Clarinet Projesi",
+  cover: "/images/noctanima-kapak.jpg",
+  coverAlt: "Noctanima albüm kapağı",
+  portrait: "/images/noctanima-duo.jpg",
+  portraitAlt: "Miray Eslek ve İrem Ece Gülensoy",
+  paragraphs: [
+    "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
+  ],
+  credits: [
+    { label: "Sanatçılar", value: "Miray Eslek & İrem Ece Gülensoy" },
+    { label: "Prodüktör", value: "Hakan Kurşun" },
+    { label: "Etiket", value: "Pb Müzik" },
+    {
+      value: "@noctanimaofficial",
+      href: "https://www.instagram.com/noctanimaofficial/",
+    },
+  ] satisfies GundemCredit[],
+};
+
 export const gundemItems: GundemItem[] = [
   {
     label: "Yaklaşan performans",
