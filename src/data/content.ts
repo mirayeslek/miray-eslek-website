@@ -675,7 +675,7 @@ export const events = {
         "Öğrencilerle kolektif doğaçlama, dinleme ve senkronize melodi geliştirme üzerine buluşma.",
     },
     {
-      date: "2025",
+      date: "2025–2026",
       title: "Çerkes Rıdvan'ın Dolabı",
       venue: "İstanbul Tiyatro Festivali · Dolkun Production · Bahçe Galata",
       role: "Sahne müziği · Afife ödülü",
