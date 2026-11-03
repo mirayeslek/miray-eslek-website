@@ -697,14 +697,14 @@ export const events = {
     },
     {
       date: "2025",
-      month: "Ağu",
+      month: "Ağustos",
       title: "Tico Band",
-      venue: "Müze Gazhane",
-      role: "Klarinet · loop station",
+      venue: "Minoa Pera",
+      role: "Klarinet · Loop Station",
       category: "konser" as const,
       image: "/images/tico-poster.jpg",
       description:
-        "Klarnet ve loop station ile klarnet–ud duo performansı; İklim Müzesi önünde gerçekleşen ilk konser.",
+        "Klarnet ve Loop Station ile klarnet-perküsyon, Miray Eslek & Cem Mazlum duo performansı.",
     },
     {
       date: "2025",
