@@ -655,10 +655,10 @@ export const events = {
   past: [
     {
       date: "2026",
-      month: "May",
+      month: "Mayıs",
       title: "Sınırsız Sesler",
       venue: "Kot 1 Kolektif",
-      role: "Soundpainting atölyesi · Nidal Aras ile",
+      role: "Soundpainting Atölyesi · Nidal Aras ile",
       category: "atolye" as const,
       description:
         "Soundpainting nedir, çeşitli gruplarla nasıl çalışılır ve doğaçlama pratiğine nasıl entegre edilir sorularına odaklanan atölye.",
