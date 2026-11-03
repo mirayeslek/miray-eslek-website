@@ -328,39 +328,7 @@ export const mediaSections = {
       ],
     },
   ] as MediaItem[],
-  photo: [
-    {
-      title: "Portre — Klarinet",
-      category: "Sanatçı fotoğrafı",
-      year: "—",
-      image: "/images/portre-klarnet.jpg",
-    },
-    {
-      title: "Portre — Mozaik",
-      category: "Sanatçı fotoğrafı",
-      year: "—",
-      image: "/images/portre-mozaik-renkli.jpg",
-    },
-    {
-      title: "Portre — Mozaik (siyah-beyaz)",
-      category: "Sanatçı fotoğrafı",
-      year: "—",
-      image: "/images/portre-mozaik-sb.jpg",
-      imagePosition: "28% 42%",
-    },
-    {
-      title: "Sahne",
-      category: "Performans",
-      year: "—",
-      image: "/images/hero-sahne.jpg",
-    },
-    {
-      title: "Afife Tiyatro Ödülleri",
-      category: "Ödül töreni",
-      year: "2025",
-      image: "/images/afife-odul.jpg",
-    },
-  ] as MediaItem[],
+  photo: [] as MediaItem[],
   audio: [
     {
       title: "Miray Eslek: Klarinet",
