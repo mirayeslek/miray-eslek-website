@@ -758,14 +758,14 @@ export const events = {
     },
     {
       date: "2024",
-      month: "Eki",
+      month: "Ekim",
       title: "Soundpainting Buluşmaları",
       venue: "Atölye Tez · Üsküdar",
-      role: "Atölye yürütücüsü · İSPO",
+      role: "Atölye Yürütücüsü",
       category: "atolye" as const,
       image: "/images/soundpainting-atolyetez.jpg",
       description:
-        "12 haftalık seri: müzik, hareket ve hikâyelerin buluştuğu doğaçlama odaklı atölye programı.",
+        "12 haftalık seri: müzik, hareket ve hikâyelerin buluştuğu, doğaçlamaya odaklanan bir atölye programı.",
     },
     {
       date: "2023",
