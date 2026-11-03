@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { PageShell } from "@/components/PageShell";
+import { NoctanimaNews } from "@/components/NoctanimaNews";
 import { worksSections } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -66,6 +67,9 @@ export default function WorksPage() {
               ) : (
                 body
               )}
+              {section.id === "performans" ? (
+                <NoctanimaNews className="mt-8" compact />
+              ) : null}
             </section>
           );
         })}

@@ -6,6 +6,7 @@ import {
   gundemItems,
   site,
 } from "@/data/content";
+import { NoctanimaNews } from "@/components/NoctanimaNews";
 import { SocialIcons } from "@/components/SocialIcons";
 
 export default function Home() {
@@ -170,7 +171,9 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <NoctanimaNews className="mb-8" />
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {gundemItems.map((item) => (
               <Link
                 key={item.label}

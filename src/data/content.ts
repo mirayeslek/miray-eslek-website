@@ -75,6 +75,33 @@ export type GundemItem = {
   href?: string;
 };
 
+export type GundemCredit = {
+  label?: string;
+  value: string;
+  href?: string;
+};
+
+export const gundemFeature = {
+  label: "Yeni albüm",
+  title: "Noctanima Duo Clarinet Projesi",
+  cover: "/images/noctanima-kapak.jpg",
+  coverAlt: "Noctanima albüm kapağı",
+  portrait: "/images/noctanima-duo.jpg",
+  portraitAlt: "Miray Eslek ve İrem Ece Gülensoy",
+  paragraphs: [
+    "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
+  ],
+  credits: [
+    { label: "Sanatçılar", value: "Miray Eslek & İrem Ece Gülensoy" },
+    { label: "Prodüktör", value: "Hakan Kurşun" },
+    { label: "Etiket", value: "Pb Müzik" },
+    {
+      value: "@noctanimaofficial",
+      href: "https://www.instagram.com/noctanimaofficial/",
+    },
+  ] satisfies GundemCredit[],
+};
+
 export const gundemItems: GundemItem[] = [
   {
     label: "Yaklaşan performans",
@@ -533,7 +560,7 @@ export const cerkesRidvanProject = {
   basedOn: "Reşad Ekrem Koçu'dan",
   festival: "İstanbul Tiyatro Festivali · Dolkun Production · Bahçe Galata",
   year: "2025–2026",
-  role: "Müzisyen · klarinet",
+  role: "Müzisyen · klarinet · vokal",
   musicDirector: "Gökçe \"CheChe\" Gürçay",
   musicians: ["Volkan İncüvez", "Miray Eslek", "Özlem Kaya", "Gökçe \"CheChe\" Gürçay"],
   award: {
@@ -542,7 +569,7 @@ export const cerkesRidvanProject = {
   },
   intro: [
     "2025–2026 sanat sezonunda İstanbul Tiyatro Festivali'nde sahnelenen Aşk Yolunda İstanbul'da Neler Olmuş? Çerkes Rıdvan'ın Dolabı oyununun müzisyen ekibinde yer aldı.",
-    "Oyunun müzik direktörü Gökçe \"CheChe\" Gürçay, Özlem Kaya ve Volkan İncüvez ile birlikte, 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü aldı.",
+    "Oyunun müzik direktörü Gökçe \"CheChe\" Gürçay ve yine oyunun müzisyen ekibinden olan Özlem Kaya ve Volkan İncüvez ile birlikte, 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü aldı.",
   ],
   credits: [
     { label: "Anlatıcı", value: "Cem Zeynel Kılıç" },
@@ -580,7 +607,7 @@ export const bio = {
     "İstanbul'da doğdu; müzikle birlikte büyüdü. 2005'te İstanbul Üniversitesi Devlet Konservatuvarı Yarı Zamanlı Klarnet Bölümü'ne kabul edildi, 2014'te mezun oldu. 2016'da Mimar Sinan Güzel Sanatlar Üniversitesi Sosyoloji Bölümü'nde lisansını, 2019'da aynı bölümde yüksek lisansını tamamladı. 2026'da İstanbul Teknik Üniversitesi Müzik İleri Araştırmalar Merkezi'nde (İTÜ MİAM) müzik yüksek lisansını; icracılık, performans ve doğaçlama alanlarına odaklanan çalışmalarıyla bitirdi.",
     "Klarinet ve ses onun için yalnızca enstrüman değil; dinlemenin, düşünmenin ve bir arada üretmenin yollarıdır. 2010'dan beri İstanbul Klarnet Derneği üyesidir; klasik müzik çalışmalarına İstanbul Klarnet Korosu ile devam eder. 2015'ten bu yana soundpainting üzerine çalışmalarını Walter Thompson Soundpainting Think Tank, Soundpainting Lab Ensemble, İstanbul Soundpainting Orkestra ve MIAM Improvisation Ensemble ile klarnet ve vokal alanında sürdürür. Yaratıcılık, doğaçlama ve performansla birlikte Soundpainting ve İhtimaller serisini düzenler.",
     "Akademik çalışmalarını müzik sosyolojisi alanında, özellikle gürültü ve müzik ilişkisi üzerine sürdürür. Hakan Kurşun'un mentörlüğünde yürüttüğü müzik üretim ve analizi derslerini \"Her Güne Bir Melodi\" projesine dönüştürerek yüz gün boyunca her gün yeni bir müzik tasarımı üretti.",
-    "2025–2026 sanat sezonunda, İstanbul'da Aşk Yolunda Neler Olmuş: Çerkes Rıdvan'ın Dolabı oyununun müzisyen ekibinde yer aldı; oyunun müzik direktörü Gökçe \"CheChe\" Gürçay, Özlem Kaya ve Volkan İncüvez ile birlikte 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü aldı. Nisan 2026 itibarıyla Cemâl Acet'in yönettiği Çamur'un müzik tasarımlarını klarnet icrası ve sahne performansıyla sürdürür.",
+    "2025–2026 sanat sezonunda, İstanbul'da Aşk Yolunda Neler Olmuş: Çerkes Rıdvan'ın Dolabı oyununun müzisyen ekibinde yer aldı ve 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülüne layık görüldü. Nisan 2026 itibarıyla Cemâl Acet'in yönettiği Çamur oyununun müzik tasarımlarını klarnet icrası ve sahne performansıyla sürdürür.",
   ],
 };
 
