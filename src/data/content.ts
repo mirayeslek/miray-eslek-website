@@ -506,6 +506,29 @@ export const soundpaintingProject = {
   instagram: "https://instagram.com/soundpainting_ve_ihtimaller",
   instagramHandle: "@soundpainting_ve_ihtimaller",
   email: "mirayeslek@gmail.com",
+  news: {
+    label: "Haber",
+    title: "Sesin Çok Boyutlu Dünyasında Keşif Yolculuğu",
+    date: "9 Eylül 2026",
+    place: "Kocaeli, Ormanya",
+    paragraphs: [
+      "TÜBİTAK 4004 Doğa Eğitimi ve Bilim Okulları Destekleme Programı kapsamında 325B209 numaralı \"Sesin Çok Boyutlu Dünyasında Keşif Yolculuğu\" projesinde Soundpainting ve Sesin Dili kapsamında bir araya geldik. Çocuklar, Soundpainting dili ile seslere yolculuğa çıktı.",
+    ],
+    images: [
+      {
+        src: "/images/ormanya-soundpainting-1.jpg",
+        alt: "Ormanya'da çocuklarla Soundpainting çalışması",
+      },
+      {
+        src: "/images/ormanya-soundpainting-2.jpg",
+        alt: "Ormanya'da Soundpainting işaretleriyle çalışma",
+      },
+      {
+        src: "/images/ormanya-soundpainting-3.jpg",
+        alt: "Ormanya'da çember halinde Soundpainting",
+      },
+    ],
+  },
   intro: [
     "Soundpainting ve İhtimaller Atölyesi, performans sanatlarıyla ilgilenen katılımcılar için Soundpainting (canlı kompozisyon) işaret dili aracılığıyla anda üretilen ve kolektif bir performans deneyimi pratiğidir. Atölyeler, klarinetist ve müzik eğitmeni Miray Eslek tarafından düzenlenir.",
     "Soundpainting, müzik ve diğer performans sanatlarında kullanılan disiplinlerarası bir işaret dilidir. Performansı yöneten Soundpainter, işaretler aracılığıyla katılımcılardan ses, hareket, hikâye, karakter, ritim, tavır ya da farklı performatif fikirler üretmelerini ister ve bunları anlık olarak ortak bir kompozisyonda bir araya getirir.",
