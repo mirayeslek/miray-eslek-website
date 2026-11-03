@@ -533,7 +533,7 @@ export const cerkesRidvanProject = {
   basedOn: "Reşad Ekrem Koçu'dan",
   festival: "İstanbul Tiyatro Festivali · Dolkun Production · Bahçe Galata",
   year: "2025–2026",
-  role: "Müzisyen · klarinet",
+  role: "Müzisyen · klarinet ve vokal",
   musicDirector: "Gökçe \"CheChe\" Gürçay",
   musicians: ["Volkan İncüvez", "Miray Eslek", "Özlem Kaya", "Gökçe \"CheChe\" Gürçay"],
   award: {
@@ -542,7 +542,7 @@ export const cerkesRidvanProject = {
   },
   intro: [
     "2025–2026 sanat sezonunda İstanbul Tiyatro Festivali'nde sahnelenen Aşk Yolunda İstanbul'da Neler Olmuş? Çerkes Rıdvan'ın Dolabı oyununun müzisyen ekibinde yer aldı.",
-    "Oyunun müzik direktörü Gökçe \"CheChe\" Gürçay, Özlem Kaya ve Volkan İncüvez ile birlikte, 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü aldı.",
+    "Oyunun müzik direktörü Gökçe \"CheChe\" Gürçay ve yine oyunun müzisyen ekibinden olan Özlem Kaya ve Volkan İncüvez ile birlikte, 28. Yapı Kredi Afife Tiyatro Ödülleri'nde Yılın En Başarılı Sahne Müziği ödülünü aldı.",
   ],
   credits: [
     { label: "Anlatıcı", value: "Cem Zeynel Kılıç" },
