@@ -728,10 +728,10 @@ export const events = {
     },
     {
       date: "2025",
-      month: "Eki",
+      month: "Ekim",
       title: "Soundpainting ve İhtimaller",
       venue: "Studioo.Flow · Beşiktaş",
-      role: "Atölye yürütücüsü",
+      role: "Atölye Yürütücüsü",
       category: "atolye" as const,
       image: "/images/soundpainting-ihtimaller-5.jpg",
       description:
