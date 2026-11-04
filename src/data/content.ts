@@ -42,7 +42,7 @@ export const artistStatement = {
     "Doğaçlama bir karşılaşma, iletişim ve birlikte düşünme biçimidir.",
   ],
   homeIntro: [
-    "Klarnet, vokal ve doğaçlama pratiklerini araştırma ile performans arasında taşır; ses, gürültü ve dinleme üzerine çalışır.",
+    "Klarnet, vokal ve doğaçlama pratiklerini araştırır; ses, gürültü ve dinleme üzerine çalışır.",
     "Sahne müziği, kolektif doğaçlama ve soundpainting atölyeleri aracılığıyla müziğin toplumsal boyutunu araştırır.",
   ],
 };
