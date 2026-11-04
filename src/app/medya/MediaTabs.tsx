@@ -31,30 +31,62 @@ function itemLinks(item: MediaItem) {
   return [];
 }
 
-function PhotoGrid({ items }: { items: MediaItem[] }) {
+function PhotoFrame({
+  item,
+  className,
+  sizes,
+}: {
+  item: MediaItem;
+  className: string;
+  sizes: string;
+}) {
   return (
-    <div className="grid gap-4 sm:grid-cols-2">
-      {items.map((item) => (
-        <div
+    <div className={`relative w-full overflow-hidden bg-surface ${className}`}>
+      {item.image && (
+        <Image
+          src={item.image}
+          alt={item.title}
+          fill
+          quality={90}
+          className="object-cover"
+          style={
+            item.imagePosition
+              ? { objectPosition: item.imagePosition }
+              : undefined
+          }
+          sizes={sizes}
+        />
+      )}
+    </div>
+  );
+}
+
+function PhotoGrid({ items }: { items: MediaItem[] }) {
+  const wide = items.filter((item) => item.wide);
+  const portraits = items.filter((item) => !item.wide);
+
+  return (
+    <div className="space-y-4">
+      {wide.map((item) => (
+        <PhotoFrame
           key={`${item.title}-${item.image}`}
-          className="relative aspect-[4/5] w-full overflow-hidden bg-surface"
-        >
-          {item.image && (
-            <Image
-              src={item.image}
-              alt={item.title}
-              fill
-              className="object-cover"
-              style={
-                item.imagePosition
-                  ? { objectPosition: item.imagePosition }
-                  : undefined
-              }
-              sizes="(max-width: 640px) 100vw, 420px"
-            />
-          )}
-        </div>
+          item={item}
+          className="aspect-[1932/1333]"
+          sizes="(max-width: 1152px) 100vw, 1104px"
+        />
       ))}
+      {portraits.length > 0 && (
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {portraits.map((item) => (
+            <PhotoFrame
+              key={`${item.title}-${item.image}`}
+              item={item}
+              className="aspect-[2/3]"
+              sizes="(max-width: 768px) 100vw, 360px"
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -127,29 +159,35 @@ export function MediaTabs() {
   };
 
   return (
-    <PageShell reading>
-      <PageHeader title="Medya" />
+    <PageShell>
+      <div className="max-w-3xl">
+        <PageHeader title="Medya" />
 
-      <div className="relative z-20 mb-8 flex flex-wrap gap-2" role="tablist">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            type="button"
-            role="tab"
-            aria-selected={activeTab === tab.id}
-            onClick={() => selectTab(tab.id)}
-            className={`cursor-pointer rounded-full px-5 py-2.5 text-sm transition-colors ${
-              activeTab === tab.id
-                ? "bg-accent text-bg"
-                : "border border-border text-muted hover:border-accent/40 hover:text-fg"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+        <div className="relative z-20 mb-8 flex flex-wrap gap-2" role="tablist">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              role="tab"
+              aria-selected={activeTab === tab.id}
+              onClick={() => selectTab(tab.id)}
+              className={`cursor-pointer rounded-full px-5 py-2.5 text-sm transition-colors ${
+                activeTab === tab.id
+                  ? "bg-accent text-bg"
+                  : "border border-border text-muted hover:border-accent/40 hover:text-fg"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div key={activeTab} role="tabpanel">
+      <div
+        key={activeTab}
+        role="tabpanel"
+        className={activeTab === "photo" ? undefined : "max-w-3xl"}
+      >
         {items.length === 0 ? (
           <p className="text-sm text-muted">Yakında eklenecek.</p>
         ) : activeTab === "photo" ? (
