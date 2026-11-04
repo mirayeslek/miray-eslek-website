@@ -430,11 +430,11 @@ export const mediaSections = {
   ] as MediaItem[],
   press: [
     {
-      title: "Hakan Kurşun — Willkommen",
+      title: "Hakan Kurşun — Auf Wiedersehen & Willkommen",
       category: "Rotka",
       year: "2026",
       description:
-        "19 Haziran 2026 tarihinde dijital platformlarda da yayımlanan \"Willkommen\", Hanau tren istasyonlarında sürekli olarak sergilenen uluslararası sanat projesinin parçası olarak dinleyicilerle buluştu. Hanau'nun kültürel kimliğine gönderme yapan eserler, Grimm Kardeşler'in doğduğu şehirden ilham alarak karşılaşma, yolculuk ve vedalaşma temalarını müzikal bir anlatımla yorumluyor. Eserin yaylı düzenlemelerinde kemanda Seçil Işıksoy ve Mert Kemancı, viyolada Aslı Gazioğlu, çelloda Gül Sıvacı ve kontrbasta Barış Çelik yer alırken; klarnet performansları ise Miray Eslek ve Ece Gülensoy tarafından seslendirildi. Eserin beste ve düzenlemesi ile gitar kayıtları, prodüksiyonu ve müzik yönetmenliği Hakan Kurşun imzası taşırken, yapımcılığını Pb Müzik Yapım Ltd. üstleniyor.",
+        "19 Haziran 2026 tarihinde dijital platformlarda da yayımlanan \"Auf Wiedersehen & Willkommen\", Hanau tren istasyonlarında sürekli olarak sergilenen uluslararası sanat projesinin bir parçası olarak dinleyicilerle buluştu. Hanau'nun kültürel kimliğine gönderme yapan eserler, Grimm Kardeşler'in doğduğu şehirden ilham alarak karşılaşma, yolculuk ve vedalaşma temalarını müzikal bir anlatımla yorumluyor. Eserin yaylı düzenlemelerinde kemanda Seçil Işıksoy ve Mert Kemancı, viyolada Aslı Gazioğlu, çelloda Gül Sıvacı ve kontrbasta Barış Çelik yer alırken, Willkommen'de ayrıca klarnet performansları Miray Eslek ve Ece Gülensoy tarafından seslendirildi. Eserlerin beste ve düzenlemesi ile gitar kayıtları, prodüksiyonu ve müzik yönetmenliği Hakan Kurşun imzası taşırken, yapımcılığını Pb Müzik Yapım Ltd. üstleniyor.",
       links: [
         {
           label: "Haber",
