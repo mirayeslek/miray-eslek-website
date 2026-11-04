@@ -347,7 +347,7 @@ export const mediaSections = {
       title: "Portre — Ayakta",
       category: "Sanatçı fotoğrafı",
       year: "—",
-      image: "/images/portre-klarnet-3.jpg",
+      image: "/images/portre-klarnet-3b.jpg",
     },
     {
       title: "Portre — Çömelerek",
