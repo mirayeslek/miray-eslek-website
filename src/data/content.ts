@@ -138,6 +138,7 @@ export type MediaItem = {
   links?: MediaLink[];
   image?: string;
   imagePosition?: string;
+  wide?: boolean;
 };
 
 export const mediaSections = {
@@ -328,7 +329,33 @@ export const mediaSections = {
       ],
     },
   ] as MediaItem[],
-  photo: [] as MediaItem[],
+  photo: [
+    {
+      title: "Portre — Klarinet",
+      category: "Sanatçı fotoğrafı",
+      year: "—",
+      image: "/images/portre-klarnet-1.jpg",
+      wide: true,
+    },
+    {
+      title: "Portre — Oturarak",
+      category: "Sanatçı fotoğrafı",
+      year: "—",
+      image: "/images/portre-klarnet-2.jpg",
+    },
+    {
+      title: "Portre — Ayakta",
+      category: "Sanatçı fotoğrafı",
+      year: "—",
+      image: "/images/portre-klarnet-3.jpg",
+    },
+    {
+      title: "Portre — Çömelerek",
+      category: "Sanatçı fotoğrafı",
+      year: "—",
+      image: "/images/portre-klarnet-4.jpg",
+    },
+  ] as MediaItem[],
   audio: [
     {
       title: "Miray Eslek: Klarinet",
