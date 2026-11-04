@@ -603,17 +603,20 @@ export const cerkesRidvanProject = {
     {
       src: "/images/poster-cerkes-ridvan.jpg",
       alt: "Çerkes Rıdvan'ın Dolabı afişi",
-      wide: true,
+      width: 1000,
+      height: 1321,
     },
     {
       src: "/images/afife-odul.jpg",
       alt: "Afife Tiyatro Ödülleri",
+      width: 907,
+      height: 1222,
     },
     {
       src: "/images/afife-ekip.jpg",
       alt: "Afife ödül töreni — müzik ekibi",
-      wide: true,
-      objectFit: "contain" as const,
+      width: 318,
+      height: 427,
     },
   ],
 };
