@@ -527,7 +527,7 @@ export const soundpaintingProject = {
       place: "MSGSÜ Müzik Kulübü",
       paragraphs: [
         "MSGSÜ Müzik Kulübü iş birliğiyle Miray Eslek ile Soundpainting Atölyesi gerçekleşti. Müzik, önceden yazılmış bir partisyonun ötesinde, o anda ve birlikte şekillendi.",
-        "İşaretler aracılığıyla anlık müzikal üretim ve kolektif doğaçlama üzerine çalışıldı. 20 kişilik katılımcı ile Soundpainting ve İhtimaller serilerinin müzik, dans, tiyatro, görsel sanat gibi performans alanlarının birçok şekli beraber üretim ile gerçekleşti.",
+        "İşaretler aracılığıyla anlık müzikal üretim ve kolektif doğaçlama üzerine çalışıldı. 20 katılımcıyla Soundpainting ve İhtimaller serisinde müzik, dans, tiyatro ve görsel sanat gibi performans alanları birçok biçimde birlikte üretildi.",
       ],
       link: {
         label: "MSGSÜ Müzik Kulübü",
