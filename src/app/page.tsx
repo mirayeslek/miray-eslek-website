@@ -7,6 +7,7 @@ import {
   site,
 } from "@/data/content";
 import { NoctanimaNews } from "@/components/NoctanimaNews";
+import { SoundpaintingHomeNews } from "@/components/SoundpaintingNews";
 import { SocialIcons } from "@/components/SocialIcons";
 
 export default function Home() {
@@ -170,6 +171,8 @@ export default function Home() {
               Tüm etkinlikler →
             </Link>
           </div>
+
+          <SoundpaintingHomeNews className="mb-8" />
 
           <NoctanimaNews className="mb-8" />
 
