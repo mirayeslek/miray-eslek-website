@@ -91,9 +91,11 @@ export function SoundpaintingHomeNews({ className = "" }: { className?: string }
         />
         <div>
           <div className="space-y-5 text-base leading-[1.85] text-fg/90">
-            {news.paragraphs.map((paragraph) => (
-              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-            ))}
+            {("homeParagraphs" in news ? news.homeParagraphs : news.paragraphs).map(
+              (paragraph) => (
+                <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+              ),
+            )}
           </div>
           <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
             <Link
