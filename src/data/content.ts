@@ -112,8 +112,8 @@ export const gundemItems: GundemItem[] = [
   {
     label: "Yeni proje",
     title: "ÇAMUR",
-    detail: "24 Ekim 2026 · 11:00 · Büyükyalı",
-    href: "/etkinlikler?tab=past",
+    detail: "18 Kasım · 11:00 · Büyükyalı",
+    href: "/etkinlikler?tab=current",
   },
   {
     label: "Son yayın",
@@ -703,6 +703,18 @@ export const events = {
         "Seans: 14–15 Kasım 2026, saat 19:00. Kafes Arkası Günahkarları serisi · Reşad Ekrem Koçu'dan uyarlama; geçen yıl Çerkes Rıdvan'ın Dolabı ile başlayan serinin devamı. Müzik ekibinde Miray Eslek.",
       external:
         "https://tiyatrolar.com.tr/tiyatro/kafes-arkasi-gunahkarlari-silahsor-kizi-rabia-hanim",
+    },
+    {
+      date: "2026",
+      month: "18 Kasım",
+      title: "ÇAMUR",
+      venue: "Büyükyalı · Raife Cebeci Anaokulu",
+      role: "Performans · Müzik",
+      category: "tiyatro" as const,
+      image: "/images/camur-afis.jpg",
+      description:
+        "Seans: 18 Kasım 2026, saat 11:00. Bedenin taşıdığı hikâyeler, sesin görünmeyen katmanları ve temasın dönüştürücü gücüyle kurulan performatif bir alan.",
+      external: "https://tiyatrolar.com.tr/tiyatro/camur",
     },
   ] satisfies EventItem[],
   past: [
