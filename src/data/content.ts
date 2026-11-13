@@ -110,7 +110,7 @@ export const gundemItems: GundemItem[] = [
     href: "/etkinlikler?tab=current",
   },
   {
-    label: "Yeni proje",
+    label: "Yaklaşan performans",
     title: "ÇAMUR",
     detail: "18 Kasım · 11:00 · Büyükyalı",
     href: "/etkinlikler?tab=current",

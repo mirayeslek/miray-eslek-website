@@ -176,7 +176,7 @@ export default function Home() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {gundemItems.map((item) => (
               <Link
-                key={item.label}
+                key={`${item.label}-${item.title}`}
                 href={item.href ?? "#"}
                 className="block rounded-lg border border-border p-5 transition-colors hover:border-accent/25 hover:bg-surface/30"
               >
