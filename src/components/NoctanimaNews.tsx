@@ -40,10 +40,27 @@ export function NoctanimaNews({
             quality={90}
           />
         </div>
-        <div className="space-y-5 text-base leading-[1.85] text-fg/90">
-          {gundemFeature.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-          ))}
+        <div>
+          <div className="space-y-5 text-base leading-[1.85] text-fg/90">
+            {gundemFeature.paragraphs.map((paragraph) => (
+              <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+            ))}
+          </div>
+          {gundemFeature.links.length > 0 && (
+            <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+              {gundemFeature.links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-accent hover:underline"
+                >
+                  {link.label} →
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

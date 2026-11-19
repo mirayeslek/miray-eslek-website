@@ -63,6 +63,21 @@ export function EventCards({ items }: { items: EventItem[] }) {
             {event.description ? (
               <p className="mt-3 text-sm leading-relaxed text-fg/70">{event.description}</p>
             ) : null}
+            {event.links && event.links.length > 0 ? (
+              <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+                {event.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-accent transition-colors hover:text-fg"
+                  >
+                    {link.label} →
+                  </a>
+                ))}
+              </div>
+            ) : null}
             {event.external ? (
               <a
                 href={event.external}
@@ -119,6 +134,21 @@ export function EventList({ items }: { items: EventItem[] }) {
             </p>
             {event.description ? (
               <p className="mt-2 text-sm leading-relaxed text-fg/70">{event.description}</p>
+            ) : null}
+            {event.links && event.links.length > 0 ? (
+              <div className="mt-2 flex flex-wrap gap-x-5 gap-y-2">
+                {event.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-accent transition-colors hover:text-fg"
+                  >
+                    {link.label} →
+                  </a>
+                ))}
+              </div>
             ) : null}
             {event.external ? (
               <a

@@ -91,6 +91,16 @@ export const gundemFeature = {
   paragraphs: [
     "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayınlandı. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstlendi.",
   ],
+  links: [
+    {
+      label: "Spotify",
+      href: "https://open.spotify.com/intl-tr/album/2kj3Use5dLOUDHADK4Syce?si=NXTsWw7CS2y0opuqMmgFFg",
+    },
+    {
+      label: "Apple Music",
+      href: "https://music.apple.com/tr/album/noctanima/6825825296?l=tr",
+    },
+  ],
   credits: [
     { label: "Sanatçılar", value: "Miray Eslek & İrem Ece Gülensoy" },
     { label: "Prodüktör", value: "Hakan Kurşun" },
@@ -345,6 +355,15 @@ export const mediaSections = {
     },
   ] as MediaItem[],
   audio: [
+    {
+      title: "Noctanima",
+      category: "Albüm · Duo",
+      year: "2026",
+      description:
+        "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü. Pb Müzik etiketiyle 20 Kasım'da yayınlandı.",
+      image: "/images/noctanima-kapak.jpg",
+      links: gundemFeature.links,
+    },
     {
       title: "Miray Eslek: Klarinet",
       category: "Playlist",
@@ -678,6 +697,7 @@ export type EventItem = {
   image?: string;
   description?: string;
   external?: string;
+  links?: { label: string; href: string }[];
 };
 
 const camurEvent = {
@@ -705,6 +725,7 @@ const upcomingEvents = [
       description:
         "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayınlandı. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstlendi.",
       external: "https://www.instagram.com/noctanimaofficial/",
+      links: gundemFeature.links,
     },
 ] satisfies EventItem[];
 
