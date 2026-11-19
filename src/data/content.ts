@@ -89,7 +89,7 @@ export const gundemFeature = {
   portrait: "/images/noctanima-duo.jpg",
   portraitAlt: "Miray Eslek ve İrem Ece Gülensoy",
   paragraphs: [
-    "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
+    "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayınlandı. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstlendi.",
   ],
   credits: [
     { label: "Sanatçılar", value: "Miray Eslek & İrem Ece Gülensoy" },
@@ -703,7 +703,7 @@ const upcomingEvents = [
       category: "album" as const,
       image: "/images/noctanima-kapak.jpg",
       description:
-        "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
+        "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayınlandı. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstlendi.",
       external: "https://www.instagram.com/noctanimaofficial/",
     },
 ] satisfies EventItem[];
