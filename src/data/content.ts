@@ -132,6 +132,12 @@ export const noctanimaChartNews = {
 
 export const gundemItems: GundemItem[] = [
   {
+    label: "Yaklaşan performans",
+    title: "Silahşör Kızı Rabia Hanım",
+    detail: "19–20 Aralık 2026 · 16–17 Ocak 2027 · 19:00 · Phebus Müzayede Evi",
+    href: "https://biletinial.com/tr-tr/tiyatro/kafes-arkasi-gunahkarlari-silahsor-kizi-rabia-hanim",
+  },
+  {
     label: "Haber",
     title: "Noctanima, Uzamsal Ses listesinde",
     detail: "Birinci sırada · Apple Music",
@@ -737,7 +743,21 @@ const camurEvent = {
   external: "https://tiyatrolar.com.tr/tiyatro/camur",
 };
 
-const upcomingEvents: EventItem[] = [];
+const upcomingEvents = [
+  {
+    date: "2026–2027",
+    month: "19–20 Ara · 16–17 Oca",
+    title: "Silahşör Kızı Rabia Hanım",
+    venue: "Phebus Müzayede Evi · Asmalımescit",
+    role: "Müzisyen · Klarinet",
+    category: "tiyatro" as const,
+    image: "/images/poster-rabia-hanim.jpg",
+    description:
+      "Seanslar: 19–20 Aralık 2026 ve 16–17 Ocak 2027, saat 19:00. Kafes Arkası Günahkarları serisi · Reşad Ekrem Koçu'dan uyarlama. Müzik ekibinde Miray Eslek.",
+    external:
+      "https://biletinial.com/tr-tr/tiyatro/kafes-arkasi-gunahkarlari-silahsor-kizi-rabia-hanim",
+  },
+] satisfies EventItem[];
 
 const currentEvents = [
     {
@@ -981,8 +1001,8 @@ const homepagePerformanceTitles = new Set(
     .map((item) => item.title),
 );
 
-const homepagePerformances = [...currentEvents, ...upcomingEvents].filter(
-  (event) => homepagePerformanceTitles.has(event.title),
+const homepagePerformances = currentEvents.filter((event) =>
+  homepagePerformanceTitles.has(event.title),
 );
 
 const homepagePerformanceIds = new Set(
