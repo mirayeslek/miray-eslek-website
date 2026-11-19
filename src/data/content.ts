@@ -737,7 +737,9 @@ const camurEvent = {
   external: "https://tiyatrolar.com.tr/tiyatro/camur",
 };
 
-const upcomingEvents = [
+const upcomingEvents: EventItem[] = [];
+
+const currentEvents = [
     {
       date: "2026",
       month: "20 Kasım",
@@ -752,8 +754,6 @@ const upcomingEvents = [
       links: gundemFeature.links,
     },
 ] satisfies EventItem[];
-
-const currentEvents: EventItem[] = [];
 
 const pastEvents = [
     {
