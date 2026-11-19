@@ -791,7 +791,7 @@ const pastEvents = [
     },
     {
       date: "2026",
-      month: "18 Kasım",
+      month: "Kasım",
       title: "ÇAMUR",
       venue: "Büyükyalı · Raife Cebeci Anaokulu",
       role: "Performans · Müzik",
