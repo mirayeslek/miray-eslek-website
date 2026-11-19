@@ -104,18 +104,6 @@ export const gundemFeature = {
 
 export const gundemItems: GundemItem[] = [
   {
-    label: "Yaklaşan performans",
-    title: "Silahşör Kızı Rabia Hanım",
-    detail: "14–15 Kasım · 19:00 · Phebus Müzayede Evi",
-    href: "/etkinlikler?tab=current",
-  },
-  {
-    label: "Yaklaşan performans",
-    title: "ÇAMUR",
-    detail: "18 Kasım · 11:00 · Büyükyalı",
-    href: "/etkinlikler?tab=current",
-  },
-  {
     label: "Son yayın",
     title: "Sephardic Songs",
     detail: "Dönem projesi · İTÜ MİAM · 2026",
@@ -720,7 +708,9 @@ const upcomingEvents = [
     },
 ] satisfies EventItem[];
 
-const currentEvents = [
+const currentEvents: EventItem[] = [];
+
+const pastEvents = [
     {
       date: "2026",
       month: "Kasım",
@@ -746,9 +736,6 @@ const currentEvents = [
         "Seans: 18 Kasım 2026, saat 11:00. Bedenin taşıdığı hikâyeler, sesin görünmeyen katmanları ve temasın dönüştürücü gücüyle kurulan performatif bir alan.",
       external: "https://tiyatrolar.com.tr/tiyatro/camur",
     },
-] satisfies EventItem[];
-
-const pastEvents = [
     camurEvent,
     {
       date: "2026",
