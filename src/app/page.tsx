@@ -6,7 +6,7 @@ import {
   gundemItems,
   site,
 } from "@/data/content";
-import { NoctanimaNews } from "@/components/NoctanimaNews";
+import { NoctanimaChartNews, NoctanimaNews } from "@/components/NoctanimaNews";
 import { SoundpaintingHomeNews } from "@/components/SoundpaintingNews";
 import { SocialIcons } from "@/components/SocialIcons";
 
@@ -172,26 +172,50 @@ export default function Home() {
             </Link>
           </div>
 
+          <NoctanimaChartNews className="mb-8" />
+
           <SoundpaintingHomeNews className="mb-8" />
 
           <NoctanimaNews className="mb-8" />
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {gundemItems.map((item) => (
-              <Link
-                key={`${item.label}-${item.title}`}
-                href={item.href ?? "#"}
-                className="block rounded-lg border border-border p-5 transition-colors hover:border-accent/25 hover:bg-surface/30"
-              >
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
-                  {item.label}
-                </p>
-                <p className="mt-3 font-display text-base font-medium leading-snug text-fg">
-                  {item.title}
-                </p>
-                <p className="mt-1.5 text-sm text-muted">{item.detail}</p>
-              </Link>
-            ))}
+            {gundemItems.map((item) => {
+              const className =
+                "block rounded-lg border border-border p-5 transition-colors hover:border-accent/25 hover:bg-surface/30";
+              const body = (
+                <>
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">
+                    {item.label}
+                  </p>
+                  <p className="mt-3 font-display text-base font-medium leading-snug text-fg">
+                    {item.title}
+                  </p>
+                  <p className="mt-1.5 text-sm text-muted">{item.detail}</p>
+                </>
+              );
+              if (item.href?.startsWith("http")) {
+                return (
+                  <a
+                    key={`${item.label}-${item.title}`}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={className}
+                  >
+                    {body}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={`${item.label}-${item.title}`}
+                  href={item.href ?? "#"}
+                  className={className}
+                >
+                  {body}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

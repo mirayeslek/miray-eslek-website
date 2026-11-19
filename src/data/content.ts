@@ -112,7 +112,31 @@ export const gundemFeature = {
   ] satisfies GundemCredit[],
 };
 
+export const noctanimaChartNews = {
+  label: "Haber",
+  title: "Noctanima, Uzamsal Ses listesinde birinci sırada",
+  date: "20 Kasım 2026",
+  place: "Apple Music",
+  paragraphs: [
+    "Miray Eslek ve İrem Ece Gülensoy'un Noctanima albümü Uzamsal Ses listesinde birinci sırada.",
+  ],
+  link: {
+    label: "Uzamsal Ses listesi",
+    href: "https://music.apple.com/tr/playlist/uzamsal-ses-i-%C3%A7in-olu%C5%9Fturuldu/pl.154af9931b214278a64274c410046e69?l=tr",
+  },
+  image: {
+    src: "/images/noctanima-kapak.jpg",
+    alt: "Noctanima albüm kapağı",
+  },
+};
+
 export const gundemItems: GundemItem[] = [
+  {
+    label: "Haber",
+    title: "Noctanima, Uzamsal Ses listesinde",
+    detail: "Birinci sırada · Apple Music",
+    href: noctanimaChartNews.link.href,
+  },
   {
     label: "Son yayın",
     title: "Sephardic Songs",
