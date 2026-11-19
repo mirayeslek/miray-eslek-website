@@ -27,7 +27,7 @@ export function EventCards({ items }: { items: EventItem[] }) {
     <div className="grid gap-5 sm:grid-cols-2">
       {items.map((event) => (
         <article
-          key={`${event.date}-${event.title}`}
+          key={`${event.date}-${event.month ?? ""}-${event.title}-${event.venue}`}
           className="group overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-accent/30"
         >
           <div
@@ -85,7 +85,7 @@ export function EventList({ items }: { items: EventItem[] }) {
     <div className="space-y-3">
       {items.map((event) => (
         <article
-          key={`${event.date}-${event.title}`}
+          key={`${event.date}-${event.month ?? ""}-${event.title}-${event.venue}`}
           className="group flex gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent/30 sm:items-center sm:gap-5 sm:p-5"
         >
           <div

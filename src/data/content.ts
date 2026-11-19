@@ -705,8 +705,7 @@ const camurEvent = {
   external: "https://tiyatrolar.com.tr/tiyatro/camur",
 };
 
-export const events = {
-  upcoming: [
+const upcomingEvents = [
     {
       date: "2026",
       month: "20 Kasım",
@@ -719,8 +718,9 @@ export const events = {
         "Miray Eslek ve İrem Ece Gülensoy'un ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayımlanıyor. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstleniyor.",
       external: "https://www.instagram.com/noctanimaofficial/",
     },
-  ] satisfies EventItem[],
-  current: [
+] satisfies EventItem[];
+
+const currentEvents = [
     {
       date: "2026",
       month: "Kasım",
@@ -746,8 +746,9 @@ export const events = {
         "Seans: 18 Kasım 2026, saat 11:00. Bedenin taşıdığı hikâyeler, sesin görünmeyen katmanları ve temasın dönüştürücü gücüyle kurulan performatif bir alan.",
       external: "https://tiyatrolar.com.tr/tiyatro/camur",
     },
-  ] satisfies EventItem[],
-  past: [
+] satisfies EventItem[];
+
+const pastEvents = [
     camurEvent,
     {
       date: "2026",
@@ -936,7 +937,35 @@ export const events = {
       role: "İSPO",
       category: "konser" as const,
     },
-  ] satisfies EventItem[],
+] satisfies EventItem[];
+
+function eventIdentity(event: EventItem) {
+  return [event.date, event.month ?? "", event.title, event.venue].join("|");
+}
+
+const homepagePerformanceTitles = new Set(
+  gundemItems
+    .filter((item) => item.label === "Yaklaşan performans")
+    .map((item) => item.title),
+);
+
+const homepagePerformances = [...currentEvents, ...upcomingEvents].filter(
+  (event) => homepagePerformanceTitles.has(event.title),
+);
+
+const homepagePerformanceIds = new Set(
+  homepagePerformances.map(eventIdentity),
+);
+
+export const events = {
+  upcoming: upcomingEvents,
+  current: currentEvents,
+  past: [
+    ...homepagePerformances,
+    ...pastEvents.filter(
+      (event) => !homepagePerformanceIds.has(eventIdentity(event)),
+    ),
+  ],
 };
 
 export const publications = [
