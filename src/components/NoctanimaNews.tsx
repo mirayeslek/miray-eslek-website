@@ -25,7 +25,7 @@ export function NoctanimaChartNews({
       <p className="mt-3 text-sm text-accent">
         {news.date} · {news.place}
       </p>
-      <div className="mt-8 grid items-start gap-8 md:grid-cols-[minmax(160px,220px)_minmax(0,1fr)] md:gap-12">
+      <div className="mt-8 grid items-center gap-8 md:grid-cols-[minmax(200px,280px)_minmax(0,1fr)] md:gap-12">
         <Image
           src={news.image.src}
           alt={news.image.alt}
@@ -33,7 +33,7 @@ export function NoctanimaChartNews({
           height={800}
           quality={90}
           className="h-auto w-full rounded border border-border"
-          sizes="(max-width: 768px) 100vw, 220px"
+          sizes="(max-width: 768px) 100vw, 280px"
         />
         <div>
           <div className="space-y-5 text-base leading-[1.85] text-fg/90">
