@@ -141,9 +141,9 @@ export const noctanimaPosterNews = {
   place: "Afiş",
   paragraphs: [
     "Noctanima'yı her yerden dinleyebilir, sanatçıları takip edebilirsiniz.",
-    ...gundemFeature.paragraphs,
+    "İrem Ece Gülensoy ve Miray Eslek'in ilk albümü Noctanima, 20 Kasım'da Pb Müzik etiketiyle yayınlandı. Albüm kaydı ve prodüktörlük sürecini Hakan Kurşun üstlendi.",
     "Albüm, Anadolu ezgilerinden valse uzanan 11 özgün besteden oluşuyor.",
-    "Albümdeki \"Düğüm\", \"Aykırı\", \"Valse 1\" ve \"Valse 2\" İrem Ece Gülensoy, \"Lapis\", \"Şehir\", \"Las Noches\", \"Nostalji\" ve \"Blue Shadows\" ise Miray Eslek tarafından bestelendi. \"Like a Dream\" ikilinin ortak eseri olarak albümde yer alırken, \"İki Kuş\" Gülensoy ve Eslek'le birlikte Hakan Kurşun'un imzasını taşıyor.",
+    "Albümdeki \"Düğüm\", \"Aykırı\", \"Valse 1\" ve \"Valse 2\" İrem Ece Gülensoy'un besteleri; \"Lapis\", \"Şehir\", \"Las Noches\", \"Nostalji\" ve \"Blue Shadows\" ise Miray Eslek'in besteleridir ve \"Like A Dream\" ikilinin ortak eserleridir. \"İki Kuş\", Gülensoy ve Eslek'le birlikte Hakan Kurşun'un imzasını taşıyor.",
   ],
   links: [
     ...gundemFeature.links,
