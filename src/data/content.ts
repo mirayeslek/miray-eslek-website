@@ -123,7 +123,7 @@ export const noctanimaChartNews = {
   place: "Apple Music",
   paragraphs: [
     "Noctanima albümünün çıkış parçası Like A Dream, Apple Müzik Uzamsal Ses listesinde 1. sırada yer alıyor.",
-    "İki klarnetin akustik olarak çalındığı bu eserde beste Miray Eslek ve İrem Ece Gülensoy'a ait olup, uzamsal ses alanında Dolby Atmos ile dinleyeceğiniz albümün prodüktörlük sürecinde ise Hakan Kurşun yer alıyor.",
+    "İki klarnetin akustik olarak çalındığı bu eser, Miray Eslek ve İrem Ece Gülensoy'a ait olup uzamsal ses alanında Dolby Atmos ile dinleyeceğiniz albümün prodüktörlük sürecinde ise Hakan Kurşun yer alıyor.",
   ],
   link: {
     label: "Uzamsal Ses listesi",
