@@ -141,6 +141,9 @@ export const noctanimaPosterNews = {
   place: "Afiş",
   paragraphs: [
     "Noctanima'yı her yerden dinleyebilir, sanatçıları takip edebilirsiniz.",
+    ...gundemFeature.paragraphs,
+    "Albüm, Anadolu ezgilerinden valse uzanan 11 özgün besteden oluşuyor.",
+    "Albümdeki \"Düğüm\", \"Aykırı\", \"Valse 1\" ve \"Valse 2\" İrem Ece Gülensoy, \"Lapis\", \"Şehir\", \"Las Noches\", \"Nostalji\" ve \"Blue Shadows\" ise Miray Eslek tarafından bestelendi. \"Like a Dream\" ikilinin ortak eseri olarak albümde yer alırken, \"İki Kuş\" Gülensoy ve Eslek'le birlikte Hakan Kurşun'un imzasını taşıyor.",
   ],
   links: [
     ...gundemFeature.links,
