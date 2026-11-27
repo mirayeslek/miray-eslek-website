@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { PageShell } from "@/components/PageShell";
-import { NoctanimaChartNews, NoctanimaNews } from "@/components/NoctanimaNews";
+import {
+  NoctanimaChartNews,
+  NoctanimaNews,
+  NoctanimaPosterNews,
+} from "@/components/NoctanimaNews";
 import { SoundpaintingNews } from "@/components/SoundpaintingNews";
 import { worksSections } from "@/data/content";
 
@@ -70,6 +74,7 @@ export default function WorksPage() {
               )}
               {section.id === "performans" ? (
                 <>
+                  <NoctanimaPosterNews className="mt-8" />
                   <NoctanimaNews className="mt-8" compact />
                   <NoctanimaChartNews className="mt-8" />
                 </>

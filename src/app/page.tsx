@@ -6,7 +6,11 @@ import {
   gundemItems,
   site,
 } from "@/data/content";
-import { NoctanimaChartNews, NoctanimaNews } from "@/components/NoctanimaNews";
+import {
+  NoctanimaChartNews,
+  NoctanimaNews,
+  NoctanimaPosterNews,
+} from "@/components/NoctanimaNews";
 import { SoundpaintingHomeNews } from "@/components/SoundpaintingNews";
 import { SocialIcons } from "@/components/SocialIcons";
 
@@ -171,6 +175,8 @@ export default function Home() {
               Tüm etkinlikler →
             </Link>
           </div>
+
+          <NoctanimaPosterNews className="mb-8" />
 
           <NoctanimaChartNews className="mb-8" />
 

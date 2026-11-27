@@ -93,6 +93,10 @@ export const gundemFeature = {
   ],
   links: [
     {
+      label: "YouTube",
+      href: "https://www.youtube.com/playlist?list=OLAK5uy_mBdl1NC_j4lQSHRppupRiJVBWEsAUYLQk",
+    },
+    {
       label: "Spotify",
       href: "https://open.spotify.com/intl-tr/album/2kj3Use5dLOUDHADK4Syce?si=NXTsWw7CS2y0opuqMmgFFg",
     },
@@ -130,12 +134,49 @@ export const noctanimaChartNews = {
   },
 };
 
+export const noctanimaPosterNews = {
+  label: "Haber",
+  title: "Noctanima'yı her yerden dinleyin",
+  date: "27 Kasım 2026",
+  place: "Afiş",
+  paragraphs: [
+    "Noctanima'yı her yerden dinleyebilir, sanatçıları takip edebilirsiniz.",
+  ],
+  links: [
+    ...gundemFeature.links,
+    {
+      label: "@noctanimaofficial",
+      href: "https://www.instagram.com/noctanimaofficial/",
+    },
+    {
+      label: "mirayeslek.com",
+      href: "https://www.mirayeslek.com",
+    },
+    {
+      label: "ecegulensoy.com",
+      href: "https://ecegulensoy.com",
+    },
+  ],
+  image: {
+    src: "/images/noctanima-afis.jpg",
+    alt: "Noctanima albüm afişi: Miray Eslek ve İrem Ece Gülensoy",
+    width: 1400,
+    height: 2001,
+  },
+};
+
 export const gundemItems: GundemItem[] = [
   {
     label: "Yaklaşan performans",
     title: "Silahşör Kızı Rabia Hanım",
     detail: "19–20 Aralık 2026 · 16–17 Ocak 2027 · 19:00 · Phebus Müzayede Evi",
     href: "https://biletinial.com/tr-tr/tiyatro/kafes-arkasi-gunahkarlari-silahsor-kizi-rabia-hanim",
+  },
+  {
+    label: "Haber",
+    title: "Noctanima afişi",
+    detail: "Her yerden dinleyin · sanatçıları takip edin",
+    href: "/#noctanima-afis",
   },
   {
     label: "Haber",
